@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Nosifer", cursive;
+  color: #b9c8c9;
+  text-shadow: black;
+}
+
+body {
+  background: rgb(218, 204, 204);
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #070505,
+    #0d0909,
+    #120d0c,
+    #16110f,
+    #261710,
+    #361c10,
+    #46210f,
+    #6a270e,
+    #912a0e,
+    #ba2613,
+    #e7121c
+  );
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+}
+
+.btns {
+  background: rgb(230, 230, 230);
+  background-image: linear-gradient(
+    to right,
+    #ff4909,
+    #f9470e,
+    #f24412,
+    #ec4215,
+    #e54018,
+    #e34418,
+    #e24818,
+    #e04b18,
+    #e35416,
+    #e55d13,
+    #e76611,
+    #e96e0f
+  );
+  color: whitesmoke;
+  border: 0px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.btns:hover {
+  transform: scale(1.05);
+  background: RED;
+  color: Black;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 48px;
+}
+
+h1 {
+  font-size: 4.8em;
+}
+
+h2 {
+  font-size: 3.2em;
+}
+
+h3 {
+  font-size: 2.4em;
+}
+
+h4,
+h5 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

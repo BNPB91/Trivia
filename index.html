@@ -1,0 +1,171 @@
+<!-- Author : Bastian Pavez -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assent/css/main.css" />
+    <link rel="stylesheet" href="/assent/css/reset.css"" />
+    <link rel="stylesheet" href="/assent/css/transition.css" />
+    <!-- Style font game -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+    <title>Play Trivia</title>
+  </head>
+  <body>
+    <!-- SECCION PARA INGRESAR NOMBRE -->
+    <section class="container name-container fadeIN" id="name-container">
+      <div class="section-name">
+        <!-- CAJA PADRE: Bienevenida Indicame tu Nombre -->
+        <div class="tarjeta">
+          <div class="tarjeta-content">
+            <!-- Primera Interfase -->
+            <h2>
+              ¡WELCOME TO <br /><span class="trivia-game-span"
+                >TRIVIA GAME!</span
+              >
+            </h2>
+             <img
+            id="teemo"
+            src="https://media1.tenor.com/images/8e062791972cb5681b53669170124069/tenor.gif?itemid=12473759"
+          ></img>
+ 
+  <h4>User name:</h4>
+
+            <form action="" id="form-name">
+              <input
+                type="text"
+                placeholder="¿HOW DO YOU WANT TO CALL YOURSELF??"
+                form="siguiente-nombre"
+                id="player-name"
+                required
+              />
+              <input
+                type="submit"
+                value="FOLLOWING"
+                id="siguiente-nombre"
+                class="btns"
+              />
+                 
+         
+            </form>
+          </div>
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <!-- Segunda Interfase -->
+
+    <section class="container form-container fadeIN" id="form-container">
+      <div class="section-questions">
+        <div class="tarjeta">
+          <div class="tarjeta-content">
+            <h2>¡Let the <span class="trivia-game-span"> GAME BEGIN!</span></h2>
+            <h4>Build your Trivia</h4>
+            <form action="" id="trivia">
+              <div class="question-field">
+                <label for="amount">Question Numbers : </label>
+                <input
+                  type="number"
+                  id="amount"
+                  min="0"
+                  class="amount"
+                  value="10"
+                />
+              </div>
+
+              <div class="question-field">
+                <label for="category">Category: </label>
+                <select name="" id="category">
+                  <option value="0">Any Category</option>
+                  <option value="9">Cultura general</option>
+                  <option value="10">Libros</option>
+                  <option value="11">Películas</option>
+                  <option value="12">Música</option>
+                  <option value="13">Musicales y teatros</option>
+                  <option value="14">Televisión</option>
+                  <option value="15">Videojuegos</option>
+                  <option value="16">Juegos de mesa</option>
+                  <option value="17">Ciencia y naturaleza</option>
+                  <option value="18">Computación</option>
+                  <option value="19">Matemáticas</option>
+                  <option value="20">Mitología</option>
+                  <option value="21">Deportes</option>
+                  <option value="22">Geografía</option>
+                  <option value="23">Historia</option>
+                  <option value="24">Política</option>
+                  <option value="25">Arte</option>
+                  <option value="26">Celebridades</option>
+                  <option value="27">Animales</option>
+                  <option value="28">Autos</option>
+                  <option value="29">Comics</option>
+                  <option value="30">Gadgets</option>
+                  <option value="31">Ánime y manga</option>
+                  <option value="32">Caricaturas</option>
+                </select>
+              </div>
+
+              <div class="question-field">
+                <label for="difficulty">Difficulty: </label>
+                <select name="" id="difficulty">
+                  <option value="0">Any Difficulty</option>
+                  <option value="easy">Fácil</option>
+                  <option value="medium">Moderada</option>
+                  <option value="hard">Difícil</option>
+                </select>
+              </div>
+
+              <div class="question-field">
+                <label for="type">Question type: </label>
+                <select name="" id="type">
+                  <option value="0">Any kind</option>
+                  <option value="multiple">Opción Múltiple</option>
+                  <option value="boolean">Verdadero / Falso</option>
+                </select>
+              </div>
+              <div class="question-field">
+                <input
+                  type="submit"
+                  value="Good Luck &#128520;"
+                  class="btns input-comenzar"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interfase de Preguntas y Input -->
+
+    <section class="container content-container fadeIN" id="content-container">
+      <div class="section-content">
+        <div class="tarjeta">
+          <div class="tarjeta-content">
+            <div class="content" id="questionsContent">
+              <p id="questionName"></p>
+              <div class="question-items">
+                <button id="1" type="button" class="btns btns-answers"></button>
+                <button id="2" type="button" class="btns btns-answers"></button>
+                <button id="3" type="button" class="btns btns-answers"></button>
+                <button id="4" type="button" class="btns btns-answers"></button>
+              </div>
+              <p>
+                <span id="question_index"></span> /
+                <span id="num_questions"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/assent/js/main.js"></script>
+  </body>
+</html>

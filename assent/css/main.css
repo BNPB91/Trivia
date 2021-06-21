@@ -1,0 +1,223 @@
+/* Author : Bastian Pavez */
+
+/* imagen Teemno*/
+#teemo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* Caja padre: Bienvenida*/
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.tarjeta-content {
+  min-width: 50%;
+  max-width: 600px;
+  min-height: 400px;
+  padding: 50px;
+  margin: 20px 0px;
+  background-image: linear-gradient(
+    to top,
+    #141111,
+    #141110,
+    #141010,
+    #13100f,
+    #13100e,
+    #16110c,
+    #19110a,
+    #1b1207,
+    #221304,
+    #291205,
+    #301109,
+    #370e10
+  );
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .tarjeta-content {
+    min-width: 50%;
+    min-height: 400px;
+    padding: 20px;
+    margin: 20px 0px;
+    background-color: whitesmoke;
+    box-shadow: rgba(39, 35, 35, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+  }
+}
+
+.trivia-game-span {
+  font-size: 1.5em;
+  color: rgb(236, 60, 29);
+  text-shadow: rgb(145, 28, 28);
+}
+
+#form-name {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-name input {
+  font-size: 1.6em;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* SECCION TRIVIA QUESTIONS */
+
+.form-container {
+  display: none;
+}
+
+#trivia {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#trivia label {
+  font-size: 1.6em;
+}
+
+#trivia select {
+  font-size: 1.6em;
+}
+
+#trivia select option {
+  font-size: 1em;
+}
+
+#trivia input {
+  font-size: 1.6em;
+}
+
+.input-comenzar {
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+
+.question-field {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  margin: auto;
+  gap: 5px;
+  text-align: start;
+}
+
+@media screen and (max-width: 700px) {
+  .question-field {
+    width: 100%;
+  }
+}
+
+.question-field select {
+  padding: 10px;
+}
+
+.question-field .amount {
+  padding: 10px;
+}
+
+/* SECTION CONTENIDO RESPUESTAS */
+
+.content-container {
+  display: none;
+}
+
+.btns-answers {
+  margin: 10px;
+  padding: 10px;
+  font-size: 2em;
+  min-height: 50px;
+  width: 50%;
+}
+
+#questionName {
+  font-size: 2.5em;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .btns-answers {
+    width: 100%;
+    margin: 5px 0px;
+  }
+}
+
+/* TABLA DE RESULTADOS */
+#users-table {
+  width: 100%;
+}
+
+.head-table {
+  font-size: 2em;
+}
+
+.content-table {
+  font-size: 1.6em;
+}
+
+/* Last button */
+.btns-back {
+  margin-top: 20px;
+}
+
+input {
+  background-image: linear-gradient(
+    to bottom,
+    #332c39,
+    #302936,
+    #2d2533,
+    #2b2230,
+    #281f2d,
+    #251c2a,
+    #231a27,
+    #201724,
+    #1d1420,
+    #1a111d,
+    #170d19,
+    #130816
+  );
+}
+
+select {
+  background-image: linear-gradient(
+    to bottom,
+    #332c39,
+    #302936,
+    #2d2533,
+    #2b2230,
+    #281f2d,
+    #251c2a,
+    #231a27,
+    #201724,
+    #1d1420,
+    #1a111d,
+    #170d19,
+    #130816
+  );
+}
